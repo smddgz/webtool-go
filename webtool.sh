@@ -18,17 +18,20 @@ echo application is running
 cd /opt/webtool-go || exit
 git pull
 
-if [ "$1" == "stop" ]
-then
-    stop
-elif [ "$1" == "start" ]
-then
-    start
-elif [ "$1" == "restart" ]
-then
-    stop
-    start
-else
-    echo "incorrect args |start|stop|restart|"
-fi
+stop
+start
+
+#if [ "$1" == "stop" ]
+#then
+#    stop
+#elif [ "$1" == "start" ]
+#then
+#    start
+#elif [ "$1" == "restart" ]
+#then
+#    stop
+#    start
+#else
+#    echo "incorrect args |start|stop|restart|"
+#fi
 
